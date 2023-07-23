@@ -34,6 +34,11 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
+			if (*format == '\0')
+			{
+				var_end(args);
+				return (-1);
+			}
 			if (*format == 'c')
 			{
 				ch = va_arg(args, int);
