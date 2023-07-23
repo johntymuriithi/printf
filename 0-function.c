@@ -24,9 +24,9 @@ int _printf(const char *format, ...)
 	char ch, *str, percent;
 
 	if (format == NULL)
-        {
-                return (-1);
-        }
+	{
+		return (-1);
+	}
 
 	va_start(args, format);
 	for (; *format; format++)
@@ -34,10 +34,9 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			if (*format == '\0')
-			{
-				var_end(args);
-				return (-1);
+			if (*format == '\0') {
+				count += write(1, format - 1, 1);
+				break;
 			}
 			if (*format == 'c')
 			{
