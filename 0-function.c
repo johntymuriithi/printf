@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 	int count = 0;
 	char ch, *str, percent;
 
-	if (format == NULL || format == "%")
+	if (format == NULL)
         {
                 return (-1);
         }
