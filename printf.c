@@ -33,7 +33,7 @@ int print_string(const char *str)
 	return (write(1, str, len));
 }
 /**
- * helper - print char and strings
+ * helper - The function prints char and strings
  * @count: count number
  * @format: pointer to the string
  * @args: list og arguments
