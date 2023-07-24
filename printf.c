@@ -3,9 +3,9 @@
 #include <stdarg.h>
 #include "main.h"
 
-int print_char(char c)
+int print_char(int c)
 {
-	if (c == NULL)
+	if (c == '\0')
 	{
 		return (write(1, "null", 6));
 	}
