@@ -72,11 +72,10 @@ int helper(int *count, const char *format, va_list args)
 	return (0);
 }
 
-
 /**
- * _printf - print the printf functionality
- * @format: pointer to the string
- *@...: aother arguments
+ * _printf - This fuction prints the printf functionality
+ * @format: Represents the pointer to the string
+ *@...: any other arguments
  *
  * Return: return the number of words outputed
  */
