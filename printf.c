@@ -41,7 +41,11 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			if (*format == 'c')
+			if (*format == '\0')
+			{
+				return (-1);
+			}
+			if else (*format == 'c')
 			{
 				ch = va_arg(args, int);
 				count += print_char(ch);
