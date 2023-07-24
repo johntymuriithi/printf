@@ -61,13 +61,23 @@ int _printf(const char *format, ...)
 		{
 			format++;
 			if (*format == '\0')
+			{
 				return (-1);
+			}
 			else if (*format == 'c')
-				count += print_char(va_arg(args, int));
+			{
+				ch = va_arg(args, int);
+				count += print_char(ch);
+			}
 			else if (*format == 's')
-				count += print_string(va_arg(args, char*));
+			{
+				str = va_arg(args, char*);
+				count += print_string(str);
+			}
 			else if (*format == '%')
+			{
 				count += write(1, &percent, 1);
+			}
 			else
 			{
 				count += write(1, "%", 1);
@@ -75,7 +85,9 @@ int _printf(const char *format, ...)
 			}
 		}
 		else
+		{
 			count += write(1, format, 1);
+		}
 	}
 	va_end(args);
 	return (count);
