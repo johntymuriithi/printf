@@ -46,7 +46,7 @@ int _printf(const char *format, ...)
 				ch = va_arg(args, int);
 				if (ch == '\0')
 				{
-					count += write(1, ' ', 1);
+					count += write(1, " ", 1);
 				}
 				else
 				{
