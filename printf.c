@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include <stdio.h>
+#iclude <stdio.h>
 #include <stdarg.h>
 #include "main.h"
 
@@ -9,8 +9,7 @@
  *
  * Return: returns the character passed
  */
-
-int print_char(int c)
+int print_char(int c);
 {
 	return (write(1, &c, 1));
 }
@@ -21,7 +20,6 @@ int print_char(int c)
  *
  * Return: returns the formatted string
  */
-
 int print_string(const char *str)
 {
 	int len = 0;
