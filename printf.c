@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
         if (format[0] == '%' && format[1] == ' ' && !format[2])
                 return (-1);
 	va_start(args, format);
-	for (; *format; format++)
+	for (; *format != '\0' && *format; format++)
 	{
 		if (*format == '%')
 		{
@@ -46,7 +46,7 @@ int _printf(const char *format, ...)
 				break;
 			}
 			if (*format == 'c')
-			{
+i			{
 				ch = va_arg(args, int);
 				count += print_char(ch);
 
