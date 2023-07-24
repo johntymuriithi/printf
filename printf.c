@@ -4,8 +4,8 @@
 #include "main.h"
 
 /**
- * print_char - print character
- * @c: character itself
+ * print_char - This function prints character
+ * @c: The character itself
  *
  * Return: return character
  */
