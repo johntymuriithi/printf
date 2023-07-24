@@ -9,7 +9,6 @@
  *
  * Return: returns the character passed
  */
-
 int print_char(int c)
 {
 	return (write(1, &c, 1));
@@ -21,7 +20,6 @@ int print_char(int c)
  *
  * Return: returns the formatted string
  */
-
 int print_string(const char *str)
 {
 	int len = 0;
@@ -43,7 +41,6 @@ int print_string(const char *str)
  *
  * Return: return -1 otherwise no return
  */
-
 int helper(int *count, const char *format, va_list args)
 {
 	char *str;
@@ -82,6 +79,7 @@ int helper(int *count, const char *format, va_list args)
  *
  * Return: return the number of words outputed
  */
+
 int _printf(const char *format, ...)
 {
 	va_list args;
