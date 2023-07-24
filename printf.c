@@ -20,6 +20,7 @@ int print_char(int c)
  *
  * Return: returns the formatted string
  */
+
 int print_string(const char *str)
 {
 	int len = 0;
