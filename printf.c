@@ -46,7 +46,7 @@ int helper(int *count, const char *format, va_list args)
 	char *str;
 	char ch, percent = '%';
 
-	if (*format == '\0')
+	if (*format == '\0') 
 	{
 		return (-1);
 	}
