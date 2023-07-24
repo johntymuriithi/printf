@@ -7,7 +7,7 @@
  * print_char - This function prints character
  * @c: The character itself
  *
- * Return: return character
+ * Return: returns the character passed
  */
 int print_char(int c)
 {
