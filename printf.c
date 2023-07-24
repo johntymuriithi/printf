@@ -102,9 +102,9 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			count += write(1, format, 1);
-		}
-	}
-	va_end(args);
-	return (count);
+			count += write(1, format, 1);    
+		}      
+	}         
+	va_end(args);   
+	return (count);   
 }
