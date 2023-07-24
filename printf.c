@@ -15,10 +15,10 @@ int print_char(int c)
 }
 
 /**
- * print_string - print string
- * @str: pointer to the string
+ * print_string - Thai fuction prints a string
+ * @str:This is the pointer to the string
  *
- * Return: return the formatted string
+ * Return: returns the formatted string
  */
 int print_string(const char *str)
 {
