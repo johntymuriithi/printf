@@ -14,7 +14,7 @@ int print_string(const char *str)
 
 	if (str == NULL)
 	{
-		return (write(1, "null", 6));
+		return (write(1, "(null)", 6));
 	}
 	while (str[len])
 		len++;
