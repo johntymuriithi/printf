@@ -5,10 +5,6 @@
 
 int print_char(int c)
 {
-	if (c == '\0')
-	{
-		return (write(1, "null", 6));
-	}
 	return (write(1, &c, 1));
 }
 
@@ -48,7 +44,14 @@ int _printf(const char *format, ...)
 			if (*format == 'c')
 			{
 				ch = va_arg(args, int);
+				if (ch == '\0')
+				{
+					count += write(1, ' ', 1);
+				}
+				else
+				{
 				count += print_char(ch);
+				}
 			}
 			else if (*format == 's')
 			{
