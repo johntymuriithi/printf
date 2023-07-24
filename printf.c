@@ -32,10 +32,11 @@ int print_string(const char *str)
 		len++;
 	return (write(1, str, len));
 }
+
 /**
  * helper - The function prints char and strings
  * @count: count number
- * @format: pointer to the string
+ * @format: This is the pointer to the string
  * @args: list og arguments
  *
  * Return: return -1 otherwise no return
