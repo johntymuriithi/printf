@@ -99,6 +99,7 @@ int _printf(const char *format, ...)
 		{
 			format++;
 			helper(&count, format, args);
+			format++;
 		}
 		else
 		{
