@@ -15,8 +15,8 @@ int print_char(int c)
 }
 
 /**
- * print_string - Thai fuction prints a string
- * @str:This is the pointer to the string
+ * print_string - This fuction prints a string
+ * @str: This is the pointer to the string
  *
  * Return: returns the formatted string
  */
@@ -46,7 +46,7 @@ int helper(int *count, const char *format, va_list args)
 	char *str;
 	char ch, percent = '%';
 
-	if (*format == '\0') 
+	if (*format == '\0')
 	{
 		return (-1);
 	}
@@ -102,9 +102,9 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			count += write(1, format, 1);    
-		}      
-	}         
-	va_end(args);   
-	return (count);   
+			count += write(1, format, 1);
+		}
+	}
+	va_end(args);
+	return (count);
 }
