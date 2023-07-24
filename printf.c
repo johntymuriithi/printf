@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include "main.h"
 
-int print_char(int c)
+int print_char(char c)
 {
 	if (c == NULL)
 	{
