@@ -60,8 +60,9 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-
-			if (*format == 'c')
+			if (*format == '\0')
+				return (-1);
+			else if (*format == 'c')
 				count += print_char(va_arg(args, int));
 			else if (*format == 's')
 				count += print_string(va_arg(args, char*));
