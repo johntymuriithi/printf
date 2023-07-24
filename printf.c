@@ -43,9 +43,9 @@ int _printf(const char *format, ...)
 			format++;
 			if (*format == ' ')
 			{
-				return (-1);
+				count += write(1, "%", 1);
 			}
-			if (*format == 'c')
+			if else (*format == 'c')
 			{
 				ch = va_arg(args, int);
 				count += print_char(ch);
