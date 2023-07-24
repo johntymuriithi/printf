@@ -21,6 +21,7 @@ int print_char(int c)
  *
  * Return: returns the formatted string
  */
+
 int print_string(const char *str)
 {
 	int len = 0;
@@ -42,6 +43,7 @@ int print_string(const char *str)
  *
  * Return: return -1 otherwise no return
  */
+
 int helper(int *count, const char *format, va_list args)
 {
 	char *str;
