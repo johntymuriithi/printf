@@ -43,7 +43,8 @@ int _printf(const char *format, ...)
 			format++;
 			if (*format == ' ')
 			{
-				count += write(1, "%", 1);
+				char per = '%'
+				count += write(1, &per, 1);
 			}
 			if else (*format == 'c')
 			{
