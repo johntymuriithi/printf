@@ -41,12 +41,7 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			if (*format == ' ')
-			{
-				char per = '%'
-				count += write(1, &per, 1);
-			}
-			if else (*format == 'c')
+			if (*format == 'c')
 			{
 				ch = va_arg(args, int);
 				count += print_char(ch);
@@ -64,7 +59,9 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				count += write(1, format - 1, 1);
+				count += write(1, "%", 1);
+				count += write(1, format, 1);
+				/**count += write(1, format - 1, 1);*/
 			}
 		}
 		else
