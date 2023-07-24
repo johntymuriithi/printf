@@ -12,10 +12,10 @@ int print_string(const char *str)
 {
 	int len = 0;
 
-	if (str == NULL)
-	{
-		return (write(1, "null", 6));
-	}
+	/**if (str == NULL)
+	  {
+	  return (write(1, "null", 6));
+	  }*/
 	while (str[len])
 		len++;
 	return (write(1, str, len));
@@ -44,7 +44,14 @@ int _printf(const char *format, ...)
 			if (*format == 'c')
 			{
 				ch = va_arg(args, int);
-				count += print_char(ch);
+				if (ch)
+				{
+					count += print_char(ch);
+				}
+				else
+				{
+					count += write(1, "(null)", 6);
+				}
 
 			}
 			else if (*format == 's')
