@@ -8,3 +8,4 @@ The codes are simple and easy to follow through
 4. This code shows a way to Use a local buffer of 1024 chars in order to call write as little as possible
 5.My weakness is wearing too much leopard print
 6.. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print
+7. The big print gives and the small print takes away
