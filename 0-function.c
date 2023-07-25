@@ -2,6 +2,14 @@
 #include <unistd.h>
 #include <limits.h>
 #include "main.h"
+/**
+ * print_int - The function handles d and i specifiers
+ *@num: The integer to be printed
+ *@sign: The sign of the integer
+ *@space: The space between the integer
+ *
+ *Return: Return count.
+ */
 
 int print_int(int num, char sign, char space)
 {
@@ -12,7 +20,7 @@ int print_int(int num, char sign, char space)
 	if (num == INT_MIN)
 	{
 		count += write(1, "-2147483648", 11);
-		return count;
+		return (count);
 	}
 
 	if (num < 0)
