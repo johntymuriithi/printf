@@ -77,6 +77,11 @@ int helper(int *count, const char *format, va_list args)
 
 		*count += print_int(num, sign, space);
 	}
+	else if (*format == 'b')
+	{
+		unsigned int num2 = va_arg(args, unsigned int);
+		*count += Binary(num2);
+	}
 	else
 	{
 		*count += write(1, "%", 1);

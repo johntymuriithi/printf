@@ -16,6 +16,7 @@ typedef struct convert conver_t;
 
 
 int _putchar(char c);
+int Binary(unsigned int num);
 int _printf(const char *format, ...);
 int p_char(va_list);
 int p_string(va_list args);
