@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "main.h"
+
+/**
+ * Binary - Function that converts integer to binary
+ * @num: The number to be converted
+ *
+ * Return: Number in binary
+ */
+
 int Binary(unsigned int num)
 {
 	int holder[32];
@@ -12,7 +20,7 @@ int Binary(unsigned int num)
 	if (num == 0)
 	{
 		count += write(1, "0", 1);
-		return count;
+		return (count);
 	}
 	while (num > 0)
 	{
@@ -23,6 +31,7 @@ int Binary(unsigned int num)
 	while (i >= 0)
 	{
 		char c = holder[i];
+
 		count += write(1, &c, 1);
 		i--;
 	}
