@@ -68,13 +68,10 @@ int helper(int *count, const char *format, va_list args)
 	else if (*format == 'd' || *format == 'i')
 	{
 		int num = va_arg(args, int);
-		char sign = 0;
-		char space = 0;
+		char sign = 0, space = 0;
 
-		format--;
 		while (*++format == '+' || *format == ' ')
 			sign = (*format == '+') ? 1 : 0;
-
 		*count += print_int(num, sign, space);
 	}
 	else if (*format == 'b')
@@ -83,10 +80,8 @@ int helper(int *count, const char *format, va_list args)
 		*count += Binary(num2);
 	}
 	else
-	{
 		*count += write(1, "%", 1);
-		*count += write(1, format, 1);
-	}
+	*count += write(1, format, 1);
 	return (0);
 }
 
