@@ -44,8 +44,7 @@ int print_string(const char *str)
 
 int helper(int *count, const char *format, va_list args)
 {
-	char *str;
-	char ch, percent = '%';
+	char *str, ch, percent = '%';
 
 	if (*format == '\0')
 	{
@@ -80,8 +79,10 @@ int helper(int *count, const char *format, va_list args)
 		*count += Binary(num2);
 	}
 	else
+	{
 		*count += write(1, "%", 1);
-	*count += write(1, format, 1);
+		*count += write(1, format, 1);
+	}
 	return (0);
 }
 
