@@ -65,7 +65,7 @@ int helper(int *count, const char *format, va_list args)
 	{
 		*count += write(1, &percent, 1);
 	}
-	else if(*format == 'd' || *format == 'i')
+	else if (*format == 'd' || *format == 'i')
 	{
 		int num = va_arg(args, int);
 		char sign = 0;
