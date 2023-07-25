@@ -6,4 +6,5 @@ The codes are simple and easy to follow through
 2. The code shows how to handle the b format specifiers
 3. The code provides a way on how to handle the u, o and x conversion specifiers 
 4. This code shows a way to Use a local buffer of 1024 chars in order to call write as little as possible
-5.
+5.My weakness is wearing too much leopard print
+6.
